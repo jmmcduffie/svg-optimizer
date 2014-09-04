@@ -1,0 +1,9 @@
+{
+  "name": "svg-optimizer",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-svgmin": "^0.4.0",
+    "grunt-svgstore": "^0.2.7"
+  }
+}
