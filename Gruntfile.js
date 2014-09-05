@@ -24,7 +24,7 @@ module.exports = function( grunt ) {
         prefix: "icon-",
         cleanup: true
       },
-      default: {
+      iconset: {
         files: {
           "dest/icons.svg": ["svgs/*.svg"]
         }
@@ -34,5 +34,6 @@ module.exports = function( grunt ) {
 
   grunt.loadNpmTasks("grunt-svgmin");
   grunt.loadNpmTasks("grunt-svgstore");
-  grunt.registerTask( "default", ["svgmin", "svgstore"] );
+  grunt.registerTask( "default", ["svgmin"] );
+  grunt.registerTask( "iconset", ["svgmin", "svgstore:iconset"] );
 };
