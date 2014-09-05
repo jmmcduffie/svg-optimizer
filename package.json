@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "~0.4.1",
+    "load-grunt-tasks": "^0.6.0"
+  },
+  "dependencies": {
+    "grunt-imageoptim": "^1.4.1",
+    "grunt-svg-to-png": "^0.2.5",
     "grunt-svgmin": "^0.4.0",
     "grunt-svgstore": "^0.2.7"
   }

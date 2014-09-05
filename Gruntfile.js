@@ -14,7 +14,7 @@ module.exports = function( grunt ) {
           expand: true,
           cwd: "src",
           src: ["**/*.svg"],
-          dest: "svgs/",
+          dest: "dest/svg/",
           ext: ".min.svg"
         }]
       }
@@ -32,8 +32,8 @@ module.exports = function( grunt ) {
     }
   });
 
-  grunt.loadNpmTasks("grunt-svgmin");
-  grunt.loadNpmTasks("grunt-svgstore");
+  require( "load-grunt-tasks" )( grunt );
+
   grunt.registerTask( "default", ["svgmin"] );
   grunt.registerTask( "iconset", ["svgmin", "svgstore:iconset"] );
 };
