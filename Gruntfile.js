@@ -19,6 +19,14 @@ module.exports = function( grunt ) {
         }]
       }
     },
+    svg2png: {
+      default: {
+        files: [{
+          src: "dest/svg/**/*.svg",
+          dest: "dest/png/"
+        }]
+      }
+    },
     svgstore: {
       options: {
         prefix: "icon-",
@@ -34,6 +42,6 @@ module.exports = function( grunt ) {
 
   require( "load-grunt-tasks" )( grunt );
 
-  grunt.registerTask( "default", ["svgmin"] );
+  grunt.registerTask( "default", ["svgmin", "svg2png"] );
   grunt.registerTask( "iconset", ["svgmin", "svgstore:iconset"] );
 };
