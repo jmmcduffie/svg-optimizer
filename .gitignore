@@ -1,1 +1,7 @@
 node_modules/
+src/*
+!src/.keep
+dest/svg/*
+!dest/svg/.keep
+dest/png/*
+!dest/png/.keep
