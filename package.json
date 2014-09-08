@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "~0.4.1",
+    "grunt-contrib-clean": "^0.6.0",
     "load-grunt-tasks": "^0.6.0"
   },
   "dependencies": {

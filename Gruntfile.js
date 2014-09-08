@@ -34,9 +34,12 @@ module.exports = function( grunt ) {
       },
       iconset: {
         files: {
-          "dest/icons.svg": ["svgs/*.svg"]
+          "dest/iconset.svg": ["dest/svg/iconset/*.svg"]
         }
       }
+    },
+    clean: {
+      dest: ["dest/svg/*", "!dest/svg/.keep", "dest/png/*", "!dest/png/.keep"]
     }
   });
 
