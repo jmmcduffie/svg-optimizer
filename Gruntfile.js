@@ -15,15 +15,7 @@ module.exports = function( grunt ) {
           cwd: "src",
           src: ["**/*.svg"],
           dest: "dest/svg/",
-          ext: ".min.svg"
-        }]
-      }
-    },
-    svg2png: {
-      default: {
-        files: [{
-          src: "dest/svg/**/*.svg",
-          dest: "dest/png/"
+          ext: ".svg"
         }]
       }
     },
@@ -45,6 +37,6 @@ module.exports = function( grunt ) {
 
   require( "load-grunt-tasks" )( grunt );
 
-  grunt.registerTask( "default", ["svgmin", "svg2png"] );
+  grunt.registerTask( "default", ["svgmin"] );
   grunt.registerTask( "iconset", ["svgmin", "svgstore:iconset"] );
 };
